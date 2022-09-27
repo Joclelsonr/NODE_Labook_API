@@ -1,0 +1,57 @@
+### Endpoint de teste
+GET http://localhost:3003/ping
+
+### 1 Cadastro
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "jackson",
+    "email": "jackson@gmail.com",
+    "password": "116699"
+}
+
+### 2 Login
+POST http://localhost:3003/users/login
+Content-Type: application/json
+Authorization: 
+
+{
+    "email": "ciclana@gmail.com",
+    "password": "asdfg123"
+}
+
+### 3 Criar Post
+POST http://localhost:3003/posts/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYTE3MzY3LWVmNzAtNGFjZS05ODdjLWU3NmIzZDE4ZjFiNiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjM4ODE2ODEsImV4cCI6MTY2Mzk2ODA4MX0.wCT10kC1kAjXknqkgq6nje0xOaltY3hOFds8hOE4a3
+
+{
+    "content": "Vai corinthians"
+}
+
+### 4 Get All Posts
+GET http://localhost:3003/posts/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYTE3MzY3LWVmNzAtNGFjZS05ODdjLWU3NmIzZDE4ZjFiNiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjM5NTU0ODcsImV4cCI6MTY2NDA0MTg4N30.sHcyeSlMWOY3tNJlGeIP2gwS4rWvka8zbpZ0MI9nNZM
+
+### 5 Delete Post
+POST http://localhost:3003/posts/delete/203
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYTE3MzY3LWVmNzAtNGFjZS05ODdjLWU3NmIzZDE4ZjFiNiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjM5NTU0ODcsImV4cCI6MTY2NDA0MTg4N30.sHcyeSlMWOY3tNJlGeIP2gwS4rWvka8zbpZ0MI9nNZM
+
+### Like
+POST http://localhost:3003/posts/like
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYTE3MzY3LWVmNzAtNGFjZS05ODdjLWU3NmIzZDE4ZjFiNiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjM5NTU0ODcsImV4cCI6MTY2NDA0MTg4N30.sHcyeSlMWOY3tNJlGeIP2gwS4rWvka8zbpZ0MI9nNZM
+
+{
+    "postId": "1663884946981"
+}
+
+### Deslike
+POST http://localhost:3003/posts/deslike
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwMyIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjM5NzExNzcsImV4cCI6MTY2NDA1NzU3N30.IFCdcylIZdxtV8OgoA_GHYN3414JA8CbbTgsAOKOiQy
+
+{
+    "postId": "201"
+}
