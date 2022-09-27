@@ -36,6 +36,7 @@ O Labook é uma rede social com o objetivo de promover a conexão e interação 
 - BCrypt 
 - POO 
 - SOLID
+- Design Patterns
 - Jest - para testes
 
 <hr>
